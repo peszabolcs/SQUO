@@ -3,7 +3,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import { ArrowRight, Droplet, Leaf, Recycle, Award } from "lucide-react";
 import Product from "./pages/Product";
 import Contact from "./pages/Contact";
-import UseCases from "./pages/use-cases";
+import UseCases from "./pages/Use-cases";
 import RootLayout from "./RootLayout";
 
 function Home() {
@@ -103,7 +103,7 @@ function Home() {
       </section>
 
       {/* News Section */}
-      <section className="section-padding bg-slate-50">
+      {/* <section className="section-padding bg-slate-50">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -177,7 +177,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="section-padding animated-bg text-white">
