@@ -53,6 +53,27 @@ npm run build
 
 A build fájlok a `dist` mappában lesznek elérhetőek.
 
+## Deployment
+
+A projekt Vercel-re van deployolva. A deployment automatikusan megtörténik, amikor a main branch-re push-olunk.
+
+### Vercel Konfiguráció
+
+A client-side routing megfelelő működéséhez a projekt tartalmaz egy `vercel.json` konfigurációs fájlt:
+
+```json
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+```
+
+Ez a konfiguráció biztosítja, hogy minden URL-t az index.html-re irányítson, így a React Router megfelelően tudja kezelni a routing-ot.
+
 ## Fejlesztés
 
 - `npm run dev` - Fejlesztői szerver indítása
