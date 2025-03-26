@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: 186, 225, 230;
+  --secondary: 255, 192, 77;
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary-foreground: 210 40% 98%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 222.2 84% 4.9%;
+  --radius: 0.5rem;
+}
+
+body {
+  @apply bg-background text-slate-900;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #5ce1e6 0%, #ffc04d 100%);
+}
+
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+.container {
+  @apply px-4 md:px-6 mx-auto max-w-7xl;
+}
+
+.btn-primary {
+  @apply bg-primary text-white font-medium py-2 px-6 rounded-full hover:opacity-90 transition-all;
+}
+
+.btn-secondary {
+  @apply bg-secondary text-white font-medium py-2 px-6 rounded-full hover:opacity-90 transition-all;
+}
+
+.btn-outline {
+  @apply border-2 border-primary text-primary font-medium py-2 px-6 rounded-full hover:bg-primary hover:text-white transition-all;
+}
+
+.card {
+  @apply bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow;
+}
+
+/* Színesebb elemek */
+.gradient-bg-1 {
+  background: linear-gradient(135deg, #5ce1e6 0%, #4dabff 100%);
+}
+
+.gradient-bg-2 {
+  background: linear-gradient(135deg, #ffc04d 0%, #ff9a4d 100%);
+}
+
+.gradient-bg-3 {
+  background: linear-gradient(135deg, #5ce1e6 0%, #ffc04d 100%);
+}
+
+.gradient-border {
+  position: relative;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0.75rem;
+  padding: 2px;
+  background: linear-gradient(135deg, #5ce1e6, #ffc04d);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.feature-card {
+  @apply card border-l-4 border-primary hover:border-secondary transition-colors;
+}
+
+.feature-card-secondary {
+  @apply card border-l-4 border-secondary hover:border-primary transition-colors;
+}
+
+.animated-bg {
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  background-image: linear-gradient(-45deg, #5ce1e6, #4dabff, #ffc04d, #ff9a4d);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
