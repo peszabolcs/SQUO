@@ -114,3 +114,21 @@ body {
     background-position: 0% 50%;
   }
 }
+
+/* Új animációk */
+.animate-gradient {
+  background-size: 200% auto;
+  animation: gradient-text 3s ease infinite;
+}
+
+@keyframes gradient-text {
+  0% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}

@@ -4,6 +4,7 @@ import { ArrowRight, Droplet, Leaf, Recycle, Award } from "lucide-react";
 import Product from "./pages/Product";
 import Contact from "./pages/Contact";
 import UseCases from "./pages/Use-cases";
+import About from "./pages/About";
 import RootLayout from "./RootLayout";
 
 function Home() {
@@ -212,6 +213,7 @@ function App() {
         <Route path="/product" element={<Product />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/use-cases" element={<UseCases />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </RootLayout>
   );
