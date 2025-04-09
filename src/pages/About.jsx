@@ -6,7 +6,7 @@ const teamMembers = [
     name: "Krima Viktória",
     university: "Budapesti Gazdasági Egyetem",
     role: "CEO",
-    image: "public/team/perjesi.jpg",
+    image: "/public/team/perjesi.jpg",
   },
   {
     name: "Fábián Borbála",
