@@ -24,7 +24,7 @@ const teamMembers = [
     name: "Perjési Szabolcs",
     university: "Szegedi Tudományegyetem",
     role: "CIO",
-    image: "public/team/perjesi.jpg",
+    image: "team/perjesi.jpg",
   },
 ];
 
