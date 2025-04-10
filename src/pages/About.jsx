@@ -10,7 +10,7 @@ const teamMembers = [
   },
   {
     name: "Fábián Borbála",
-    university: "Budapesti Gazdasági Egyetem",
+    university: "Károli Gáspár Református Egyetem",
     role: "CEO",
     image: "/team/member2.jpg",
   },
